@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    font-family: IRANYekan, Tahoma, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+header{
+
+    box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    gap: 0;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    font-size: 13px;
+    font-weight: 550;
+}
+
+nav ul li a:hover{
+    color: rgba(0, 0, 0, 0.95);
+}
+
+#fire img{
+    display: inline; width: 14px; vertical-align: middle; margin-right: 4px;
+}
+
+.leftSide{
+    display: flex;
+    gap: 0.8em;
+}
+
+.profileImg{
+    border-radius: 50%;
+    margin: 0.4em
+}
