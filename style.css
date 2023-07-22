@@ -3,11 +3,31 @@
     --navgray: #e7e7e7;
     --navblack: rgba(0, 0, 0, 0.95);
     --navagray:rgb(50, 50, 50);
+    --collegeTag:#e6feff;
+    --coursebtn: #00BCEF;
+    --bodyLink: #1e70bf;
+    --blueLink: #0097c9;
+    --smallTextGray: #718096;
+    --font-size-nav-a: 13px;
+    --font-size-xxs: 0.65rem;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-small: 10px;
+    --font-weight-hairline: 100;
+    --font-weight-thin: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 }
 
 body{
     margin: 0;
-    font-family: IRANYekan, Tahoma, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Vazirmatn, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .container{
@@ -20,8 +40,8 @@ body{
     grid-template-areas:
             "nav nav nav"
             "banner banner sidebar"
-            "content1 content2 sidebar"
-            "content3 content4 sidebar"
+            "college competition sidebar"
+            "lms exQuestionBank sidebar"
             "footer footer footer";
     grid-gap: 0.2rem;
 }
@@ -68,7 +88,7 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     color: var(--navagray);
-    font-size: 13px;
+    font-size: var(--font-size-nav-a);
     font-weight: 550;
 }
 
@@ -77,7 +97,10 @@ nav ul li a:hover{
 }
 
 #fire img{
-    display: inline; width: 14px; vertical-align: middle; margin-right: 4px;
+    display: inline;
+    width: 14px;
+    vertical-align: middle;
+    margin-right: 4px;
 }
 
 .leftSide{
@@ -101,29 +124,232 @@ nav ul li a:hover{
     margin: 1rem;
 }
 
-.content1{
-    background-color: aquamarine;
-    grid-area: content1;
+.college{
+    grid-area: college;
+    /*margin: 1rem;*/
 }
 
-.content2{
-    background-color: aquamarine;
-    grid-area: content2;
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-md);
 }
 
-.content3{
-    background-color: aquamarine;
-    grid-area: content3;
+.flexContainer a{
+    font-size: var(--font-size-xs);
+    text-decoration: none;
+    color: var(--bodyLink);
 }
 
-.content4{
-    background-color: aquamarine;
-    grid-area: content4;
+.cardTopic{
+    display: flex;
+    margin-bottom: 0;
+    margin-right: 1rem;
+}
+
+.cardContainer{
+    box-shadow: 0 1px 2px 0 var(--shadowColor);
+    border: 1px solid var(--navgray);
+    padding: 8px;
+    border-radius: 16px;
+    width: 410px;
+    height: 270px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.collegeCardContainer{
+    display: flex;
+    gap: 0.1em;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.collegeCard{
+    box-shadow: 0 1px 2px 0 var(--shadowColor);
+    border: 1px solid var(--navgray);
+    border-radius: 16px;
+}
+
+.des{
+    display: flex;
+    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-sm);
+    justify-content: space-between;
+}
+
+.desItem{
+    display: flex;
+    gap: 0.2em;
+}
+
+.collegeTag{
+    display: flex;
+    font-size: var(--font-size-xxs);
+    font-weight: var(--font-weight-normal);
+    gap: 0.2em;
+}
+
+.collegeTag p{
+    background-color: var(--collegeTag);
+    border-radius: 7px;
+    padding: 0.1rem;
+    margin: 0.1rem;
+}
+
+.course{
+    text-align: center;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    margin-top: 1rem;
+}
+
+.course a{
+    text-decoration: none;
+    background-color: var(--coursebtn);
+    color: white;
+    border-radius: 7px;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.course p{
+    font-size: var(--font-size-xxs);
+    margin-bottom: 0;
+}
+
+.competition{
+    grid-area: competition;
+    text-align: center;
+}
+
+.competitionContent{
+    text-align: center;
+    font-size: var(--font-size-xs);
+}
+
+.questionsBank{
+    text-decoration: none;
+    color: var(--blueLink);
+    border-color: var(--blueLink);
+    border-radius: 7px;
+    border: 1px solid;
+    padding: 0.5rem;
+}
+
+.blueLink{
+    text-decoration: none;
+    color: var(--blueLink);
+}
+
+.lms{
+    grid-area: lms;
+}
+
+.lmsSec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail{
+    display: flex;
+    gap: 0.3rem;
+    font-size: var(--font-size-small);
+    color: var(--smallTextGray);
+}
+
+.detailRightBorder{
+    border-right: 1px solid var(--navgray);
+    padding-right: 0.3rem;
+}
+
+.lmsSec a{
+    font-size: var(--font-size-sm);
+}
+
+.lmsSecondSec{
+    border-top: 1px solid var(--navgray);
+    border-bottom: 1px solid var(--navgray);
+}
+
+.ex{
+    color: var(--smallTextGray);
+    font-size: var(--font-size-xxs);
+    font-weight: var(--font-weight-semibold);
+    margin-top: 0;
+}
+
+.ex a{
+    color: var(--bodyLink);
+    text-decoration: none;
+}
+
+.lmsSecondSec{
+    text-align:center;
+}
+
+.lmsThirdSec{
+    border-bottom: 1px solid var(--navgray);
+}
+
+.exQuestionBank{
+    grid-area: exQuestionBank;
+}
+
+.exQuestionBankCardTopic{
+    text-align: center;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+.exQuestionBankCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.exQuestionBankCard{
+    text-align: center;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    background-color: #F7FAFC;
+    /*width: 10rem;*/
+    border-radius: 7px;
+}
+
+.exQuestionBankCard a{
+    text-decoration: none;
+    color: var(--blueLink);
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7FAFC;
+    font-size: var(--font-size-xxs);
+}
+
+.questionTow{
+    background-color: white;
+}
+
+.questions a{
+    text-decoration: none;
+    color: var(--blueLink);
 }
 
 .sidebar{
     background-color: cadetblue;
     grid-area: sidebar;
+    text-align: center;
 }
 
 footer{
@@ -138,11 +364,16 @@ footer{
         grid-template-areas:
             "nav"
             "banner"
-            "content1"
-            "content2"
-            "content3"
-            "content4"
+            "college"
+            "competition"
+            "lms"
+            "exQuestionBank"
             "sidebar"
             "footer";
     }
+    header ul {
+        display: none;
+    }
+
+
 }
