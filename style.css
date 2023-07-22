@@ -3,6 +3,11 @@ body{
     font-family: IRANYekan, Tahoma, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+/*.container{*/
+/*    display: grid;*/
+/*    height: 100vh;*/
+/*}*/
+
 header{
 
     box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15);
@@ -24,6 +29,22 @@ header{
 nav{
     display: flex;
     gap: 0;
+}
+
+@media screen and (min-width: 768px) {
+    #hamnav label, #hamburger {
+        display: none;
+    }
+}
+
+/*small screen transform*/
+@media screen and (max-width: 768px){
+    .items a {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
 }
 
 nav ul{
