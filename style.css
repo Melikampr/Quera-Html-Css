@@ -10,6 +10,7 @@
     --smallTextGray: #718096;
     --footer-color-T-text:#4A5568;
     --footer-color-text: #718096;
+    --exQuestionBankCard-bg: #F7FAFC;
     --font-size-nav-a: 13px;
     --font-size-xxs: 0.65rem;
     --font-size-xs: 0.75rem;
@@ -25,6 +26,7 @@
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
+    --font-weight-large: 550;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 }
@@ -63,7 +65,7 @@ header{
     margin: 0 auto;
 }
 
-.items{
+#items{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +76,6 @@ header{
 nav{
     display: flex;
     gap: 0;
-
 }
 
 nav ul{
@@ -88,7 +89,7 @@ nav ul li a{
     text-decoration: none;
     color: var(--navagray);
     font-size: var(--font-size-nav-a);
-    font-weight: 550;
+    font-weight: var(--font-weight-large);
 }
 
 nav ul li a:hover{
@@ -112,11 +113,11 @@ nav ul li a:hover{
     margin: 0.4em
 }
 
-.banner{
+#banner{
     grid-area: banner;
 }
 
-.banner img{
+#banner img{
     border-radius: 16px;
     max-width: 95%;
     max-height: 100%;
@@ -125,7 +126,6 @@ nav ul li a:hover{
 
 .college{
     grid-area: college;
-    /*margin: 1rem;*/
 }
 
 .flexContainer{
@@ -139,12 +139,16 @@ nav ul li a:hover{
     font-size: var(--font-size-xs);
     text-decoration: none;
     color: var(--bodyLink);
+    margin-left: 0.5rem;
 }
 
 .cardTopic{
     display: flex;
     margin-bottom: 0;
-    margin-right: 1rem;
+}
+
+.cardTopic img{
+    margin: 0 1rem 0 0.5rem;
 }
 
 .cardContainer{
@@ -156,12 +160,12 @@ nav ul li a:hover{
     margin-bottom: 1rem;
 }
 
-.collegeCardContainer{
+#collegeCardContainer{
     display: flex;
     gap: 0.1em;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-medium);
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     margin-bottom: 0.5rem;
 }
@@ -170,9 +174,7 @@ nav ul li a:hover{
     box-shadow: 0 1px 2px 0 var(--shadowColor);
     border: 1px solid var(--navgray);
     border-radius: 16px;
-    width: 120px;
-    height: 70px;
-    padding: 5px;
+    width: 30%;
 }
 
 .collegeCard img{
@@ -185,11 +187,11 @@ nav ul li a:hover{
     margin-top: 0;
 }
 
-.des{
+#des{
     display: flex;
     font-weight: var(--font-weight-thin);
     font-size: var(--font-size-sm);
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 0.5rem;
 }
 
@@ -198,7 +200,7 @@ nav ul li a:hover{
     gap: 0.2em;
 }
 
-.collegeTag{
+#collegeTag{
     display: flex;
     font-size: var(--font-size-xxs);
     font-weight: var(--font-weight-normal);
@@ -206,14 +208,14 @@ nav ul li a:hover{
     margin-bottom: 2rem;
 }
 
-.collegeTag p{
+#collegeTag p{
     background-color: var(--collegeTag);
     border-radius: 7px;
-    padding: 0.1rem;
+    padding: 0.3rem;
     margin: 0.1rem;
 }
 
-.course{
+#course{
     text-align: center;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
@@ -221,7 +223,7 @@ nav ul li a:hover{
     margin-bottom: 0.5rem;
 }
 
-.course a{
+#course a{
     text-decoration: none;
     background-color: var(--coursebtn);
     color: white;
@@ -263,7 +265,7 @@ nav ul li a:hover{
     color: var(--blueLink);
 }
 
-.setCenter{
+#setCenter{
     margin: 2rem;
 }
 
@@ -271,6 +273,10 @@ nav ul li a:hover{
     display: flex;
     justify-content: center;
     font-size: var(--font-size-sm);
+}
+
+#lmsContent .more{
+    margin-top: 0.5rem;
 }
 
 .lms{
@@ -299,7 +305,7 @@ nav ul li a:hover{
     font-size: var(--font-size-sm);
 }
 
-.lmsSecondSec{
+#lmsSecondSec{
     border-top: 1px solid var(--navgray);
     border-bottom: 1px solid var(--navgray);
 }
@@ -316,7 +322,7 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-.lmsThirdSec{
+#lmsThirdSec{
     border-bottom: 1px solid var(--navgray);
 }
 
@@ -342,10 +348,11 @@ nav ul li a:hover{
     text-align: center;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
-    background-color: #F7FAFC;
+    background-color: var(--exQuestionBankCard-bg);
     border-radius: 7px;
-    width: 80px;
-    height: 53px;
+    width: 23%;
+    height: 50px;
+    padding-top: 0.5rem;
 }
 
 .exQuestionBankCard p{
@@ -362,11 +369,12 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F7FAFC;
+    background-color: var(--exQuestionBankCard-bg);
     font-size: var(--font-size-xxs);
+    padding: 0 1rem;
 }
 
-.questionTow{
+#questionTow{
     background-color: white;
 }
 
@@ -391,7 +399,7 @@ nav ul li a:hover{
     border-radius: 16px;
 }
 
-#percent {
+#percent{
     display: flex;
     align-items: center;
 }
@@ -410,8 +418,7 @@ nav ul li a:hover{
 .sidebarSecSm{
     font-size: var(--font-size-xxs);
     color: var(--smallTextGray);
-    /*padding: 0;*/
-    /*margin: 0;*/
+
 }
 
 .sidebarSecMed{
@@ -435,7 +442,7 @@ footer{
     border-top: 1px solid var(--navgray);
 }
 
-.footerContainer {
+.footerContainer{
     max-width: 1200px;
     margin: 1rem;
 }
@@ -477,7 +484,7 @@ footer{
     width: 7%;
 }
 
-#footerLastSec {
+#footerLastSec{
     width: 20%;
     padding-top: 1rem;
 }
@@ -497,7 +504,7 @@ footer{
     height: 87px;
 }
 
-.parseServer{
+#parseServer{
     font-size: var(--font-size-xxs);
 }
 
@@ -530,24 +537,10 @@ footer{
     justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-    #hamnav label, #hamburger {
-        display: none;
-    }
-    #resumeTopic{
-        display: none;
-    }
-
-    .cardContainer{
-        width: 410px;
-        height: 270px;
-    }
-}
-
 @media only screen and (max-width: 768px){
     .container{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.8fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr 1fr;
+        grid-template-rows: 2fr 0.8fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr 1fr;
         grid-template-areas:
             "nav"
             "banner"
@@ -558,9 +551,136 @@ footer{
             "sidebar"
             "footer";
     }
-    header ul {
+
+    .navItems{
         display: none;
     }
 
+    #items{
+        display: flex;
+        justify-content: space-between;
+    }
 
+    #banner{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #defBanner{
+        display: none;
+    }
+
+    #queraLogo{
+        margin-right: 7rem;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #hamburgerSec{
+        margin-right: 1rem;
+    }
+
+    #hamburgerSec label{
+        width: 50px;
+        height: 50px;
+    }
+
+    .cardContainer{
+        margin-left: 1rem;
+    }
+
+    .flexContainer{
+        margin-left: 1rem;
+    }
+
+    .sidebar{
+        margin-left: 1rem;
+    }
+
+    .footerCol{
+        width: 23%;
+        padding: 0;
+    }
+
+    #queraFooterLogo{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #footerColProduct{
+        margin-right: 1rem;
+    }
+
+    #footerLastSec{
+        width: 35%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 768px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 0.8fr 2.2fr 2.2fr 2.2fr 2.2fr 2.2fr;
+        grid-template-areas:
+            "nav nav nav"
+            "banner banner sidebar"
+            "college college sidebar"
+            "competition competition sidebar"
+            "lms lms sidebar"
+            "exQuestionBank exQuestionBank sidebar"
+            "footer footer footer";
+    }
+
+    #hamburgerSec{
+        display: none;
+    }
+
+    .leftSide{
+        margin-left: 2rem;
+    }
+
+    #phoneBanner{
+        display: none;
+    }
+
+    .sidebar{
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+
+    #resumeTopic{
+        display: none;
+    }
+
+    .footerCol{
+        width: 20%;
+        padding: 0;
+    }
+
+    #footerLastSec{
+        width: 30%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+
+    #phoneBanner{
+        display: none;
+    }
+
+    .cardContainer{
+        width: 410px;
+        height: 270px;
+    }
+
+    #hamburgerSec{
+        display: none;
+    }
+
+    #resumeTopic{
+        display: none;
+    }
 }
