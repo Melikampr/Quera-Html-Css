@@ -97,7 +97,10 @@ nav ul li a:hover{
 }
 
 #fire img{
-    display: inline; width: 14px; vertical-align: middle; margin-right: 4px;
+    display: inline;
+    width: 14px;
+    vertical-align: middle;
+    margin-right: 4px;
 }
 
 .leftSide{
@@ -141,6 +144,8 @@ nav ul li a:hover{
 
 .cardTopic{
     display: flex;
+    margin-bottom: 0;
+    margin-right: 1rem;
 }
 
 .cardContainer{
@@ -148,6 +153,10 @@ nav ul li a:hover{
     border: 1px solid var(--navgray);
     padding: 8px;
     border-radius: 16px;
+    width: 410px;
+    height: 270px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .collegeCardContainer{
@@ -215,6 +224,7 @@ nav ul li a:hover{
 
 .competition{
     grid-area: competition;
+    text-align: center;
 }
 
 .competitionContent{
@@ -288,13 +298,58 @@ nav ul li a:hover{
 }
 
 .exQuestionBank{
-    background-color: aquamarine;
     grid-area: exQuestionBank;
+}
+
+.exQuestionBankCardTopic{
+    text-align: center;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+.exQuestionBankCards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.exQuestionBankCard{
+    text-align: center;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    background-color: #F7FAFC;
+    /*width: 10rem;*/
+    border-radius: 7px;
+}
+
+.exQuestionBankCard a{
+    text-decoration: none;
+    color: var(--blueLink);
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7FAFC;
+    font-size: var(--font-size-xxs);
+}
+
+.questionTow{
+    background-color: white;
+}
+
+.questions a{
+    text-decoration: none;
+    color: var(--blueLink);
 }
 
 .sidebar{
     background-color: cadetblue;
     grid-area: sidebar;
+    text-align: center;
 }
 
 footer{
@@ -316,4 +371,9 @@ footer{
             "sidebar"
             "footer";
     }
+    header ul {
+        display: none;
+    }
+
+
 }
