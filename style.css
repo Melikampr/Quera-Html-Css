@@ -8,6 +8,8 @@
     --bodyLink: #1e70bf;
     --blueLink: #0097c9;
     --smallTextGray: #718096;
+    --footer-color-T-text:#4A5568;
+    --footer-color-text: #718096;
     --font-size-nav-a: 13px;
     --font-size-xxs: 0.65rem;
     --font-size-xs: 0.75rem;
@@ -16,6 +18,8 @@
     --font-size-lg: 1.125rem;
     --font-size-xl: 1.25rem;
     --font-size-small: 10px;
+    --font-size-ss: 12px;
+    --font-size-s: 15px;
     --font-weight-hairline: 100;
     --font-weight-thin: 200;
     --font-weight-light: 300;
@@ -27,6 +31,7 @@
 
 body{
     margin: 0;
+    padding: 0;
     font-family: Vazirmatn, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -158,13 +163,26 @@ nav ul li a:hover{
     font-weight: var(--font-weight-medium);
     justify-content: space-between;
     text-align: center;
-
+    margin-bottom: 0.5rem;
 }
 
 .collegeCard{
     box-shadow: 0 1px 2px 0 var(--shadowColor);
     border: 1px solid var(--navgray);
     border-radius: 16px;
+    width: 120px;
+    height: 70px;
+    padding: 5px;
+}
+
+.collegeCard img{
+    width: 50px;
+    height: 40px;
+}
+
+.collegeCard p{
+    font-size: var(--font-size-xs);
+    margin-top: 0;
 }
 
 .des{
@@ -172,6 +190,7 @@ nav ul li a:hover{
     font-weight: var(--font-weight-thin);
     font-size: var(--font-size-sm);
     justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
 .desItem{
@@ -184,6 +203,7 @@ nav ul li a:hover{
     font-size: var(--font-size-xxs);
     font-weight: var(--font-weight-normal);
     gap: 0.2em;
+    margin-bottom: 2rem;
 }
 
 .collegeTag p{
@@ -198,6 +218,7 @@ nav ul li a:hover{
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .course a{
@@ -206,12 +227,14 @@ nav ul li a:hover{
     color: white;
     border-radius: 7px;
     padding: 0.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+
 }
 
 .course p{
     font-size: var(--font-size-xxs);
     margin-bottom: 0;
+    margin-top: 2rem;
 }
 
 .competition{
@@ -240,8 +263,13 @@ nav ul li a:hover{
     color: var(--blueLink);
 }
 
+.setCenter{
+    margin: 2rem;
+}
+
 .more{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     font-size: var(--font-size-sm);
 }
 
@@ -288,10 +316,6 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-.lmsSecondSec{
-    text-align:center;
-}
-
 .lmsThirdSec{
     border-bottom: 1px solid var(--navgray);
 }
@@ -319,13 +343,19 @@ nav ul li a:hover{
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
     background-color: #F7FAFC;
-    /*width: 10rem;*/
     border-radius: 7px;
+    width: 80px;
+    height: 53px;
+}
+
+.exQuestionBankCard p{
+    margin: 0;
 }
 
 .exQuestionBankCard a{
     text-decoration: none;
     color: var(--blueLink);
+    margin: 0;
 }
 
 .question{
@@ -374,12 +404,14 @@ nav ul li a:hover{
 #bluePercent{
     color: var(--blueLink);
     margin-top: 1rem;
-    /*float: right;*/
+    padding: 0.5rem 0.3rem 0 0;
 }
 
 .sidebarSecSm{
     font-size: var(--font-size-xxs);
     color: var(--smallTextGray);
+    /*padding: 0;*/
+    /*margin: 0;*/
 }
 
 .sidebarSecMed{
@@ -397,8 +429,105 @@ nav ul li a:hover{
 }
 
 footer{
-    background-color: lightcoral;
     grid-area: footer;
+    margin-top: 1rem;
+    box-shadow: 0 1px 2px 0 var(--shadowColor);
+    border-top: 1px solid var(--navgray);
+}
+
+.footerContainer {
+    max-width: 1200px;
+    margin: 1rem;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footerCol{
+    width: 10%;
+    padding: 0 2rem;
+}
+
+#queraFooterLogo{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.footerCol h4{
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-normal);
+}
+
+.footerCol ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerCol ul a{
+    text-decoration: none;
+    color: var(--footer-color-text);
+    font-size: var(--font-size-ss);
+}
+
+.smallSec{
+    width: 7%;
+}
+
+#footerLastSec {
+    width: 20%;
+    padding-top: 1rem;
+}
+
+#queraImg{
+    width: 80px;
+    height: 100px;
+}
+
+#footerLogo{
+    display: flex;
+    justify-content: center;
+}
+
+#enemad{
+    width: 80px;
+    height: 87px;
+}
+
+.parseServer{
+    font-size: var(--font-size-xxs);
+}
+
+#parsServerLogo{
+    width: 55px;
+    height: 55px;
+}
+
+#parsFirstText{
+    color: var(--footer-color-text);
+    padding: 0;
+    margin: 0;
+}
+
+#footerIcon{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+
+#footerIcon svg{
+    color: var(--blueLink);
+}
+
+#iconText{
+    display: flex;
+    color: var(--footer-color-text);
+    font-size: var(--font-size-ss);
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
