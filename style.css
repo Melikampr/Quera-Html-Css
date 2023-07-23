@@ -72,12 +72,6 @@ nav{
 
 }
 
-@media screen and (min-width: 768px) {
-    #hamnav label, #hamburger {
-        display: none;
-    }
-}
-
 nav ul{
     list-style-type: none;
     display: flex;
@@ -153,8 +147,6 @@ nav ul li a:hover{
     border: 1px solid var(--navgray);
     padding: 8px;
     border-radius: 16px;
-    width: 410px;
-    height: 270px;
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
@@ -239,11 +231,18 @@ nav ul li a:hover{
     border-radius: 7px;
     border: 1px solid;
     padding: 0.5rem;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
 }
 
 .blueLink{
     text-decoration: none;
     color: var(--blueLink);
+}
+
+.more{
+    text-align: center;
+    font-size: var(--font-size-sm);
 }
 
 .lms{
@@ -347,14 +346,73 @@ nav ul li a:hover{
 }
 
 .sidebar{
-    background-color: cadetblue;
     grid-area: sidebar;
+    margin-right: 1rem;
+}
+
+.sidebarRow{
+    margin-top: 1rem;
+}
+
+.sidebarCard{
+    box-shadow: 0 1px 2px 0 var(--shadowColor);
+    border: 1px solid var(--navgray);
+    padding: 8px;
+    border-radius: 16px;
+}
+
+#percent {
+    display: flex;
+    align-items: center;
+}
+
+#percent img{
+    width: 50px;
+    height: 50px;
+}
+
+#bluePercent{
+    color: var(--blueLink);
+    margin-top: 1rem;
+    /*float: right;*/
+}
+
+.sidebarSecSm{
+    font-size: var(--font-size-xxs);
+    color: var(--smallTextGray);
+}
+
+.sidebarSecMed{
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-normal);
+}
+
+#resumeLink{
+    margin-bottom: 1rem;
     text-align: center;
+}
+
+.sidebarSec{
+    border-bottom: 1px solid var(--navgray);
 }
 
 footer{
     background-color: lightcoral;
     grid-area: footer;
+}
+
+@media screen and (min-width: 768px) {
+    #hamnav label, #hamburger {
+        display: none;
+    }
+    #resumeTopic{
+        display: none;
+    }
+
+    .cardContainer{
+        width: 410px;
+        height: 270px;
+    }
 }
 
 @media only screen and (max-width: 768px){
