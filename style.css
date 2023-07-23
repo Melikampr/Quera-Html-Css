@@ -11,10 +11,12 @@ body{
 }
 
 .container{
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 1.5fr 1.2fr 0.8fr;
+    grid-template-rows: 0.2fr 0.8fr 1.5fr 1.2fr 0.8fr;
     grid-template-areas:
             "nav nav nav"
             "banner banner sidebar"
@@ -89,8 +91,14 @@ nav ul li a:hover{
 }
 
 .banner{
-    background-color: aqua;
     grid-area: banner;
+}
+
+.banner img{
+    border-radius: 16px;
+    max-width: 95%;
+    max-height: 100%;
+    margin: 1rem;
 }
 
 .content1{
