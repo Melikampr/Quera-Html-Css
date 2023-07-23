@@ -6,6 +6,8 @@
     --collegeTag:#e6feff;
     --coursebtn: #00BCEF;
     --bodyLink: #1e70bf;
+    --blueLink: #0097c9;
+    --smallTextGray: #718096;
     --font-size-nav-a: 13px;
     --font-size-xxs: 0.65rem;
     --font-size-xs: 0.75rem;
@@ -13,6 +15,7 @@
     --font-size-md: 1rem;
     --font-size-lg: 1.125rem;
     --font-size-xl: 1.25rem;
+    --font-size-small: 10px;
     --font-weight-hairline: 100;
     --font-weight-thin: 200;
     --font-weight-light: 300;
@@ -38,7 +41,7 @@ body{
             "nav nav nav"
             "banner banner sidebar"
             "college competition sidebar"
-            "content3 content4 sidebar"
+            "lms exQuestionBank sidebar"
             "footer footer footer";
     grid-gap: 0.2rem;
 }
@@ -120,26 +123,24 @@ nav ul li a:hover{
 
 .college{
     grid-area: college;
+    /*margin: 1rem;*/
 }
 
 .flexContainer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-md);
 }
 
 .flexContainer a{
-    font-size: var(--font-size-sm);
-}
-
-.learning{
-    display: flex;
-}
-
-.flexContainera{
+    font-size: var(--font-size-xs);
     text-decoration: none;
     color: var(--bodyLink);
+}
+
+.cardTopic{
+    display: flex;
 }
 
 .cardContainer{
@@ -199,6 +200,7 @@ nav ul li a:hover{
 }
 
 .course a{
+    text-decoration: none;
     background-color: var(--coursebtn);
     color: white;
     border-radius: 7px;
@@ -212,18 +214,82 @@ nav ul li a:hover{
 }
 
 .competition{
-    background-color: aquamarine;
     grid-area: competition;
 }
 
-.content3{
-    background-color: aquamarine;
-    grid-area: content3;
+.competitionContent{
+    text-align: center;
+    font-size: var(--font-size-xs);
 }
 
-.content4{
+.questionsBank{
+    text-decoration: none;
+    color: var(--blueLink);
+    border-color: var(--blueLink);
+    border-radius: 7px;
+    border: 1px solid;
+    padding: 0.5rem;
+}
+
+.blueLink{
+    text-decoration: none;
+    color: var(--blueLink);
+}
+
+.lms{
+    grid-area: lms;
+}
+
+.lmsSec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail{
+    display: flex;
+    gap: 0.3rem;
+    font-size: var(--font-size-small);
+    color: var(--smallTextGray);
+}
+
+.detailRightBorder{
+    border-right: 1px solid var(--navgray);
+    padding-right: 0.3rem;
+}
+
+.lmsSec a{
+    font-size: var(--font-size-sm);
+}
+
+.lmsSecondSec{
+    border-top: 1px solid var(--navgray);
+    border-bottom: 1px solid var(--navgray);
+}
+
+.ex{
+    color: var(--smallTextGray);
+    font-size: var(--font-size-xxs);
+    font-weight: var(--font-weight-semibold);
+    margin-top: 0;
+}
+
+.ex a{
+    color: var(--bodyLink);
+    text-decoration: none;
+}
+
+.lmsSecondSec{
+    text-align:center;
+}
+
+.lmsThirdSec{
+    border-bottom: 1px solid var(--navgray);
+}
+
+.exQuestionBank{
     background-color: aquamarine;
-    grid-area: content4;
+    grid-area: exQuestionBank;
 }
 
 .sidebar{
@@ -245,8 +311,8 @@ footer{
             "banner"
             "college"
             "competition"
-            "content3"
-            "content4"
+            "lms"
+            "exQuestionBank"
             "sidebar"
             "footer";
     }
