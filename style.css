@@ -3,11 +3,28 @@
     --navgray: #e7e7e7;
     --navblack: rgba(0, 0, 0, 0.95);
     --navagray:rgb(50, 50, 50);
+    --collegeTag:#e6feff;
+    --coursebtn: #00BCEF;
+    --bodyLink: #1e70bf;
+    --font-size-nav-a: 13px;
+    --font-size-xxs: 0.65rem;
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-weight-hairline: 100;
+    --font-weight-thin: 200;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 }
 
 body{
     margin: 0;
-    font-family: IRANYekan, Tahoma, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: Vazirmatn, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .container{
@@ -20,7 +37,7 @@ body{
     grid-template-areas:
             "nav nav nav"
             "banner banner sidebar"
-            "content1 content2 sidebar"
+            "college competition sidebar"
             "content3 content4 sidebar"
             "footer footer footer";
     grid-gap: 0.2rem;
@@ -68,7 +85,7 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     color: var(--navagray);
-    font-size: 13px;
+    font-size: var(--font-size-nav-a);
     font-weight: 550;
 }
 
@@ -101,14 +118,102 @@ nav ul li a:hover{
     margin: 1rem;
 }
 
-.content1{
-    background-color: aquamarine;
-    grid-area: content1;
+.college{
+    grid-area: college;
 }
 
-.content2{
+.flexContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-lg);
+}
+
+.flexContainer a{
+    font-size: var(--font-size-sm);
+}
+
+.learning{
+    display: flex;
+}
+
+.flexContainera{
+    text-decoration: none;
+    color: var(--bodyLink);
+}
+
+.cardContainer{
+    box-shadow: 0 1px 2px 0 var(--shadowColor);
+    border: 1px solid var(--navgray);
+    padding: 8px;
+    border-radius: 16px;
+}
+
+.collegeCardContainer{
+    display: flex;
+    gap: 0.1em;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.collegeCard{
+    box-shadow: 0 1px 2px 0 var(--shadowColor);
+    border: 1px solid var(--navgray);
+    border-radius: 16px;
+}
+
+.des{
+    display: flex;
+    font-weight: var(--font-weight-thin);
+    font-size: var(--font-size-sm);
+    justify-content: space-between;
+}
+
+.desItem{
+    display: flex;
+    gap: 0.2em;
+}
+
+.collegeTag{
+    display: flex;
+    font-size: var(--font-size-xxs);
+    font-weight: var(--font-weight-normal);
+    gap: 0.2em;
+}
+
+.collegeTag p{
+    background-color: var(--collegeTag);
+    border-radius: 7px;
+    padding: 0.1rem;
+    margin: 0.1rem;
+}
+
+.course{
+    text-align: center;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    margin-top: 1rem;
+}
+
+.course a{
+    background-color: var(--coursebtn);
+    color: white;
+    border-radius: 7px;
+    padding: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.course p{
+    font-size: var(--font-size-xxs);
+    margin-bottom: 0;
+}
+
+.competition{
     background-color: aquamarine;
-    grid-area: content2;
+    grid-area: competition;
 }
 
 .content3{
@@ -138,8 +243,8 @@ footer{
         grid-template-areas:
             "nav"
             "banner"
-            "content1"
-            "content2"
+            "college"
+            "competition"
             "content3"
             "content4"
             "sidebar"
