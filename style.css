@@ -10,6 +10,7 @@
     --smallTextGray: #718096;
     --footer-color-T-text:#4A5568;
     --footer-color-text: #718096;
+    --exQuestionBankCard-bg: #F7FAFC;
     --font-size-nav-a: 13px;
     --font-size-xxs: 0.65rem;
     --font-size-xs: 0.75rem;
@@ -25,6 +26,7 @@
     --font-weight-light: 300;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
+    --font-weight-large: 550;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 }
@@ -74,7 +76,6 @@ header{
 nav{
     display: flex;
     gap: 0;
-
 }
 
 nav ul{
@@ -88,7 +89,7 @@ nav ul li a{
     text-decoration: none;
     color: var(--navagray);
     font-size: var(--font-size-nav-a);
-    font-weight: 550;
+    font-weight: var(--font-weight-large);
 }
 
 nav ul li a:hover{
@@ -125,7 +126,6 @@ nav ul li a:hover{
 
 .college{
     grid-area: college;
-    /*margin: 1rem;*/
 }
 
 .flexContainer{
@@ -275,6 +275,10 @@ nav ul li a:hover{
     font-size: var(--font-size-sm);
 }
 
+#lmsContent .more{
+    margin-top: 0.5rem;
+}
+
 .lms{
     grid-area: lms;
 }
@@ -344,7 +348,7 @@ nav ul li a:hover{
     text-align: center;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
-    background-color: #F7FAFC;
+    background-color: var(--exQuestionBankCard-bg);
     border-radius: 7px;
     width: 23%;
     height: 50px;
@@ -365,7 +369,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F7FAFC;
+    background-color: var(--exQuestionBankCard-bg);
     font-size: var(--font-size-xxs);
     padding: 0 1rem;
 }
@@ -395,7 +399,7 @@ nav ul li a:hover{
     border-radius: 16px;
 }
 
-#percent {
+#percent{
     display: flex;
     align-items: center;
 }
@@ -438,7 +442,7 @@ footer{
     border-top: 1px solid var(--navgray);
 }
 
-.footerContainer {
+.footerContainer{
     max-width: 1200px;
     margin: 1rem;
 }
@@ -480,7 +484,7 @@ footer{
     width: 7%;
 }
 
-#footerLastSec {
+#footerLastSec{
     width: 20%;
     padding-top: 1rem;
 }
@@ -547,7 +551,8 @@ footer{
             "sidebar"
             "footer";
     }
-    .navItems {
+
+    .navItems{
         display: none;
     }
 
@@ -608,7 +613,7 @@ footer{
         margin-right: 1rem;
     }
 
-    #footerLastSec {
+    #footerLastSec{
         width: 35%;
         margin: auto;
     }
