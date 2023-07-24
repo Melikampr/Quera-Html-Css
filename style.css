@@ -63,7 +63,7 @@ header{
     margin: 0 auto;
 }
 
-.items{
+#items{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,11 +112,11 @@ nav ul li a:hover{
     margin: 0.4em
 }
 
-.banner{
+#banner{
     grid-area: banner;
 }
 
-.banner img{
+#banner img{
     border-radius: 16px;
     max-width: 95%;
     max-height: 100%;
@@ -139,6 +139,7 @@ nav ul li a:hover{
     font-size: var(--font-size-xs);
     text-decoration: none;
     color: var(--bodyLink);
+    margin-left: 0.5rem;
 }
 
 .cardTopic{
@@ -159,7 +160,7 @@ nav ul li a:hover{
     margin-bottom: 1rem;
 }
 
-.collegeCardContainer{
+#collegeCardContainer{
     display: flex;
     gap: 0.1em;
     font-size: var(--font-size-sm);
@@ -186,7 +187,7 @@ nav ul li a:hover{
     margin-top: 0;
 }
 
-.des{
+#des{
     display: flex;
     font-weight: var(--font-weight-thin);
     font-size: var(--font-size-sm);
@@ -199,7 +200,7 @@ nav ul li a:hover{
     gap: 0.2em;
 }
 
-.collegeTag{
+#collegeTag{
     display: flex;
     font-size: var(--font-size-xxs);
     font-weight: var(--font-weight-normal);
@@ -207,14 +208,14 @@ nav ul li a:hover{
     margin-bottom: 2rem;
 }
 
-.collegeTag p{
+#collegeTag p{
     background-color: var(--collegeTag);
     border-radius: 7px;
     padding: 0.3rem;
     margin: 0.1rem;
 }
 
-.course{
+#course{
     text-align: center;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
@@ -222,7 +223,7 @@ nav ul li a:hover{
     margin-bottom: 0.5rem;
 }
 
-.course a{
+#course a{
     text-decoration: none;
     background-color: var(--coursebtn);
     color: white;
@@ -264,7 +265,7 @@ nav ul li a:hover{
     color: var(--blueLink);
 }
 
-.setCenter{
+#setCenter{
     margin: 2rem;
 }
 
@@ -300,7 +301,7 @@ nav ul li a:hover{
     font-size: var(--font-size-sm);
 }
 
-.lmsSecondSec{
+#lmsSecondSec{
     border-top: 1px solid var(--navgray);
     border-bottom: 1px solid var(--navgray);
 }
@@ -317,7 +318,7 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-.lmsThirdSec{
+#lmsThirdSec{
     border-bottom: 1px solid var(--navgray);
 }
 
@@ -369,7 +370,7 @@ nav ul li a:hover{
     padding: 0 1rem;
 }
 
-.questionTow{
+#questionTow{
     background-color: white;
 }
 
@@ -499,7 +500,7 @@ footer{
     height: 87px;
 }
 
-.parseServer{
+#parseServer{
     font-size: var(--font-size-xxs);
 }
 
@@ -550,12 +551,12 @@ footer{
         display: none;
     }
 
-    .items{
+    #items{
         display: flex;
         justify-content: space-between;
     }
 
-    .banner{
+    #banner{
         display: flex;
         justify-content: space-around;
     }
@@ -572,11 +573,11 @@ footer{
         display: none;
     }
 
-    .hamburgerSec{
+    #hamburgerSec{
         margin-right: 1rem;
     }
 
-    .hamburgerSec label{
+    #hamburgerSec label{
         width: 50px;
         height: 50px;
     }
@@ -627,7 +628,7 @@ footer{
             "footer footer footer";
     }
 
-    .hamburgerSec{
+    #hamburgerSec{
         display: none;
     }
 
@@ -670,7 +671,7 @@ footer{
         height: 270px;
     }
 
-    .hamburgerSec{
+    #hamburgerSec{
         display: none;
     }
 

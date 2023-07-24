@@ -12,8 +12,8 @@
         <div class="container">
             <header>
                 <div class="wrapper">
-                    <div class="items">
-                        <div class="hamburgerSec">
+                    <div id="items">
+                        <div id="hamburgerSec">
                             <label for="hamburger">
                                 &#9776;
                             </label>
@@ -24,7 +24,7 @@
                             <ul>
                                 <li id="queraLogo">
                                     <a href="/">
-                                        <img class="logo" src="img/logo-quera.svg" alt="Quera">
+                                        <img id="logo" src="img/logo-quera.svg" alt="Quera">
                                     </a>
                                 </li>
 
@@ -36,7 +36,7 @@
                                 <li><a class="navItems" href="https://juniora.ir">جونیورا</a></li>
                                 <li>
                                     <a class="navItems" id="fire" href="/college/bootcamp">
-                                        <img src="img/fire.png">
+                                        <img src="img/fire.png" alt="/fire">
                                         بوت‌کمپ
                                     </a>
                                 </li>
@@ -44,7 +44,7 @@
                         </nav>
 
                         <div class="leftSide">
-                            <div class="bell" tabindex="0">
+                            <div id="bell" tabindex="0">
                                 <div class="UoPmmD2tUnQ41xr2PHDk">
                                     <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 38 24" height="1em" width="1em" style="font-size: 3em; display: block;"><path fill="none" d="M0 0h24v24H0V0z"></path>
                                         <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"></path>
@@ -58,7 +58,7 @@
                 </div>
             </header>
 
-            <div class="banner">
+            <div id="banner">
                 <img id="defBanner" src="img/banner.png" alt="banner">
                 <img id="phoneBanner" src="img/bannerPhone.png" alt="phoneBanner">
             </div>
@@ -71,8 +71,9 @@
                     </div>
                     <a href="/college">همه کالج‌ها</a>
                 </div>
+
                 <div class="cardContainer">
-                    <div class="collegeCardContainer">
+                    <div id="collegeCardContainer">
                         <div class="collegeCard">
                             <img src="img/collegeImg1.svg" alt="collegeImg1">
                             <p>نمره بهتر در امتحانات</p>
@@ -87,7 +88,7 @@
                         </div>
                     </div>
 
-                    <div class="des">
+                    <div id="des">
                         <div class="desItem">
                             <img src="img/desImg1.svg" alt="desImg1">
                             <p>آموزش کاربردی</p>
@@ -106,7 +107,7 @@
                         </div>
                     </div>
 
-                    <div class="collegeTag">
+                    <div id="collegeTag">
                         <p>شروع برنامه نویسی</p>
                         <p>Python</p>
                         <p>C++</p>
@@ -116,11 +117,10 @@
                         <p>React</p>
                     </div>
 
-                    <div class="course">
+                    <div id="course">
                         <a href="/course">مشاهده دوره ها</a>
                         <p>بیش از 29935 نفر تاکنون به دوره های کوئراکالج اعتماد کرده اند</p>
                     </div>
-
                 </div>
             </div>
 
@@ -135,7 +135,7 @@
                 <div class="cardContainer">
                     <div class="competitionContent">
                         <p>در حال حاضر مسابقه فعالی وجود ندارد. می توانید سوالات مسابقات برگزار شده را در قسمت سوالات حل کنید</p>
-                        <div class="setCenter">
+                        <div id="setCenter">
                             <a class="questionsBank" href="/questionsBank">بانک سوالات</a>
                         </div>
                         <p>
@@ -156,7 +156,7 @@
                     <a href="/lms">همه کلاس ها</a>
                 </div>
                 <div class="cardContainer">
-                    <div class="lmsContent">
+                    <div id="lmsContent">
                         <div class="lmsSec">
                             <a class="blueLink" href="/advPro">برنامه سازی پیشرفته</a>
                             <div class="detail">
@@ -164,30 +164,34 @@
                                 <p class="detailRightBorder">26 عضو</p>
                             </div>
                         </div>
-                        <div class="lmsSecondSec">
+
+                        <div id="lmsSecondSec">
                             <div class="lmsSec">
                                 <a class="blueLink" href="/advPro">مبانی کامپیوتر و برنامه سازی</a>
+
                                 <div class="detail">
                                     <p>پاییز 98-97</p>
                                     <p class="detailRightBorder">26 عضو</p>
                                 </div>
                             </div>
+
                             <p class="ex">
                                 آخرین تمرین:
                                 <a href="/Ex9">تمرین سری نهم</a>
                             </p>
                         </div>
-                        <div class="lmsThirdSec">
+
+                        <div id="lmsThirdSec">
                             <p>آموزش الگوریتم</p>
                             <p class="ex">
                                 آخرین تمرین:
                                 <a href="/secondChapter">فصل دو</a>
                             </p>
                         </div>
+
                         <div class="more">
                             <a class="blueLink" href="/more">مشاهده بیشتر</a>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -200,6 +204,7 @@
                     </div>
                     <a href="/exQuestionBank">همه سوالات</a>
                 </div>
+
                 <div class="cardContainer">
                     <p class="exQuestionBankCardTopic">تعداد سوال حل شده</p>
                     <div class="exQuestionBankCards">
@@ -207,26 +212,30 @@
                             <p>0</p>
                             <a href="#">تکنولوژی</a>
                         </div>
+
                         <div class="exQuestionBankCard">
                             <p>0</p>
                             <a href="#">مسابقه</a>
                         </div>
+
                         <div class="exQuestionBankCard">
                             <p>0</p>
                             <a href="#">دانشگاهی</a>
                         </div>
+
                         <div class="exQuestionBankCard">
                             <p>0</p>
                             <a href="#">المپیاد</a>
                         </div>
                     </div>
+
                     <p class="exQuestionBankCardTopic">سوالات پیشنهادی</p>
                     <div class="questions">
                         <div class="question">
                             <a href="#">عدد خودمقلوب</a>
                             <p>ساده</p>
                         </div>
-                        <div class="question questionTow">
+                        <div class="question" id="questionTow">
                             <a href="#">باگ کد مجید</a>
                             <p>متوسط</p>
                         </div>
@@ -258,6 +267,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="sidebarRow">
                     <div class="cardTopic">
                         <p>آخرین مطالب بلاگ</p>
@@ -274,6 +284,7 @@
                         <a class="blueLink more" href="/more">مشاهده بیشتر</a>
                     </div>
                 </div>
+
                 <div class="sidebarRow">
                     <div class="cardTopic">
                         <p>فرصت های شغلی پیشنهادی</p>
@@ -310,6 +321,7 @@
                                 <img id="queraImg" src="img/quera.svg" alt="quera">
                             </a>
                         </div>
+
                         <div class="footerCol" id="footerColProduct">
                             <h4>محصولات</h4>
                             <ul>
@@ -320,6 +332,7 @@
                                 <li><a href="#">مسابقات</a></li>
                             </ul>
                         </div>
+
                         <div class="footerCol">
                             <h4>منابع</h4>
                             <ul>
@@ -329,6 +342,7 @@
                                 <li><a href="#">عضویت در خبرنامه</a></li>
                             </ul>
                         </div>
+
                         <div class="footerCol smallSec">
                             <h4>رویدادها</h4>
                             <ul>
@@ -338,6 +352,7 @@
                                 <li><a href="#">تریس وی</a></li>
                             </ul>
                         </div>
+
                         <div class="footerCol smallSec">
                             <h4>با کوئرا</h4>
                             <ul>
@@ -348,15 +363,17 @@
                                 <li><a href="#">حمایت از مسابقات</a></li>
                             </ul>
                         </div>
+
                         <div class="footerCol" id="footerLastSec">
                             <div id="footerLogo">
                                 <img id="enemad" src="img/enemad.png" alt="enemad">
-                                <div class="parseServer">
+                                <div id="parseServer">
                                     <img id="parsServerLogo" src="img/parsServer.png" alt="parsServer">
                                     <p id="parsFirstText">میزبانی توسط</p>
                                     <a class="blueLink" href="#">سرور پارسپک</a>
                                 </div>
                             </div>
+
                             <div class="footerIconSec">
                                 <div id="footerIcon">
                                     <a href="#">
@@ -365,24 +382,28 @@
                                             </path>
                                         </svg>
                                     </a>
+
                                     <a href="#">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
                                             </path>
                                         </svg>
                                     </a>
+
                                     <a href="#">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
                                             </path>
                                         </svg>
                                     </a>
+
                                     <a href="#">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
                                             </path>
                                         </svg>
                                     </a>
+
                                     <a href="#">
                                         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" focusable="false" class="chakra-icon css-6ey7w3" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
@@ -395,7 +416,6 @@
                             <div id="iconText">
                                 <p>ساخته شده با افتخار در ایران | 1394 - 1402</p>
                             </div>
-
                         </div>
                     </div>
                 </div>
