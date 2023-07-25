@@ -103,12 +103,12 @@ nav ul li a:hover{
     margin-right: 4px;
 }
 
-.leftSide{
+.left-side{
     display: flex;
     gap: 0.8em;
 }
 
-.profileImg{
+.profile-img{
     border-radius: 50%;
     margin: 0.4em
 }
@@ -128,30 +128,30 @@ nav ul li a:hover{
     grid-area: college;
 }
 
-.flexContainer{
+.flex-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: var(--font-size-md);
 }
 
-.flexContainer a{
+.flex-container a{
     font-size: var(--font-size-xs);
     text-decoration: none;
     color: var(--bodyLink);
     margin-left: 0.5rem;
 }
 
-.cardTopic{
+.card-topic{
     display: flex;
     margin-bottom: 0;
 }
 
-.cardTopic img{
+.card-topic img{
     margin: 0 1rem 0 0.5rem;
 }
 
-.cardContainer{
+.card-container{
     box-shadow: 0 1px 2px 0 var(--shadowColor);
     border: 1px solid var(--navgray);
     padding: 8px;
@@ -160,7 +160,7 @@ nav ul li a:hover{
     margin-bottom: 1rem;
 }
 
-#collegeCardContainer{
+#college-card-container{
     display: flex;
     gap: 0.1em;
     font-size: var(--font-size-sm);
@@ -170,19 +170,19 @@ nav ul li a:hover{
     margin-bottom: 0.5rem;
 }
 
-.collegeCard{
+.college-card{
     box-shadow: 0 1px 2px 0 var(--shadowColor);
     border: 1px solid var(--navgray);
     border-radius: 16px;
     width: 30%;
 }
 
-.collegeCard img{
+.college-card img{
     width: 50px;
     height: 40px;
 }
 
-.collegeCard p{
+.college-card p{
     font-size: var(--font-size-xs);
     margin-top: 0;
 }
@@ -195,12 +195,12 @@ nav ul li a:hover{
     margin-bottom: 0.5rem;
 }
 
-.desItem{
+.des-item{
     display: flex;
     gap: 0.2em;
 }
 
-#collegeTag{
+#college-tag{
     display: flex;
     font-size: var(--font-size-xxs);
     font-weight: var(--font-weight-normal);
@@ -208,7 +208,7 @@ nav ul li a:hover{
     margin-bottom: 2rem;
 }
 
-#collegeTag p{
+#college-tag p{
     background-color: var(--collegeTag);
     border-radius: 7px;
     padding: 0.3rem;
@@ -244,12 +244,12 @@ nav ul li a:hover{
     text-align: center;
 }
 
-.competitionContent{
+.competition-content{
     text-align: center;
     font-size: var(--font-size-xs);
 }
 
-.questionsBank{
+.questions-bank{
     text-decoration: none;
     color: var(--blueLink);
     border-color: var(--blueLink);
@@ -260,12 +260,12 @@ nav ul li a:hover{
     font-weight: var(--font-weight-medium);
 }
 
-.blueLink{
+.blue-link{
     text-decoration: none;
     color: var(--blueLink);
 }
 
-#setCenter{
+#set-center{
     margin: 2rem;
 }
 
@@ -283,7 +283,7 @@ nav ul li a:hover{
     grid-area: lms;
 }
 
-.lmsSec{
+.lms-sec{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -296,16 +296,16 @@ nav ul li a:hover{
     color: var(--smallTextGray);
 }
 
-.detailRightBorder{
+.detail-right-border{
     border-right: 1px solid var(--navgray);
     padding-right: 0.3rem;
 }
 
-.lmsSec a{
+.lms-sec a{
     font-size: var(--font-size-sm);
 }
 
-#lmsSecondSec{
+#lms-second-sec{
     border-top: 1px solid var(--navgray);
     border-bottom: 1px solid var(--navgray);
 }
@@ -322,21 +322,21 @@ nav ul li a:hover{
     text-decoration: none;
 }
 
-#lmsThirdSec{
+#lms-third-sec{
     border-bottom: 1px solid var(--navgray);
 }
 
-.exQuestionBank{
+.ex-question-bank{
     grid-area: exQuestionBank;
 }
 
-.exQuestionBankCardTopic{
+.ex-question-bank-card-topic{
     text-align: center;
     font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
 }
 
-.exQuestionBankCards{
+.ex-question-bank-cards{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -344,7 +344,7 @@ nav ul li a:hover{
     margin-left: 1rem;
 }
 
-.exQuestionBankCard{
+.ex-question-bank-card{
     text-align: center;
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-semibold);
@@ -355,11 +355,11 @@ nav ul li a:hover{
     padding-top: 0.5rem;
 }
 
-.exQuestionBankCard p{
+.ex-question-bank-card p{
     margin: 0;
 }
 
-.exQuestionBankCard a{
+.ex-question-bank-card a{
     text-decoration: none;
     color: var(--blueLink);
     margin: 0;
@@ -388,11 +388,11 @@ nav ul li a:hover{
     margin-right: 1rem;
 }
 
-.sidebarRow{
+.sidebar-row{
     margin-top: 1rem;
 }
 
-.sidebarCard{
+.sidebar-card{
     box-shadow: 0 1px 2px 0 var(--shadowColor);
     border: 1px solid var(--navgray);
     padding: 8px;
@@ -409,29 +409,29 @@ nav ul li a:hover{
     height: 50px;
 }
 
-#bluePercent{
+#blue-percent{
     color: var(--blueLink);
     margin-top: 1rem;
     padding: 0.5rem 0.3rem 0 0;
 }
 
-.sidebarSecSm{
+.sidebar-sec-sm{
     font-size: var(--font-size-xxs);
     color: var(--smallTextGray);
 
 }
 
-.sidebarSecMed{
+.sidebar-sec-med{
     font-size: var(--font-size-xs);
     font-weight: var(--font-weight-normal);
 }
 
-#resumeLink{
+#resume-link{
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.sidebarSec{
+.sidebar-sec{
     border-bottom: 1px solid var(--navgray);
 }
 
@@ -442,7 +442,7 @@ footer{
     border-top: 1px solid var(--navgray);
 }
 
-.footerContainer{
+.footer-container{
     max-width: 1200px;
     margin: 1rem;
 }
@@ -453,48 +453,48 @@ footer{
     justify-content: space-between;
 }
 
-.footerCol{
+.footer-col{
     width: 10%;
     padding: 0 2rem;
 }
 
-#queraFooterLogo{
+#quera-footer-logo{
     display: flex;
     justify-content: center;
     padding-top: 1rem;
 }
 
-.footerCol h4{
+.footer-col h4{
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-normal);
 }
 
-.footerCol ul{
+.footer-col ul{
     list-style-type: none;
     padding: 0;
 }
 
-.footerCol ul a{
+.footer-col ul a{
     text-decoration: none;
     color: var(--footer-color-text);
     font-size: var(--font-size-ss);
 }
 
-.smallSec{
+.small-sec{
     width: 7%;
 }
 
-#footerLastSec{
+#footer-last-sec{
     width: 20%;
     padding-top: 1rem;
 }
 
-#queraImg{
+#quera-img{
     width: 80px;
     height: 100px;
 }
 
-#footerLogo{
+#footer-logo{
     display: flex;
     justify-content: center;
 }
@@ -504,33 +504,33 @@ footer{
     height: 87px;
 }
 
-#parseServer{
+#parse-server{
     font-size: var(--font-size-xxs);
 }
 
-#parsServerLogo{
+#pars-server-logo{
     width: 55px;
     height: 55px;
 }
 
-#parsFirstText{
+#pars-first-text{
     color: var(--footer-color-text);
     padding: 0;
     margin: 0;
 }
 
-#footerIcon{
+#footer-icon{
     display: flex;
     justify-content: space-between;
     padding: 0 1rem;
     margin-top: 1rem;
 }
 
-#footerIcon svg{
+#footer-icon svg{
     color: var(--blueLink);
 }
 
-#iconText{
+#icon-text{
     display: flex;
     color: var(--footer-color-text);
     font-size: var(--font-size-ss);
@@ -552,7 +552,7 @@ footer{
             "footer";
     }
 
-    .navItems{
+    .nav-items{
         display: none;
     }
 
@@ -566,11 +566,11 @@ footer{
         justify-content: space-around;
     }
 
-    #defBanner{
+    #big-banner{
         display: none;
     }
 
-    #queraLogo{
+    #quera-logo{
         margin-right: 7rem;
     }
 
@@ -578,20 +578,20 @@ footer{
         display: none;
     }
 
-    #hamburgerSec{
+    #hamburger-sec{
         margin-right: 1rem;
     }
 
-    #hamburgerSec label{
+    #hamburger-sec label{
         width: 50px;
         height: 50px;
     }
 
-    .cardContainer{
+    .card-container{
         margin-left: 1rem;
     }
 
-    .flexContainer{
+    .flex-container{
         margin-left: 1rem;
     }
 
@@ -599,21 +599,21 @@ footer{
         margin-left: 1rem;
     }
 
-    .footerCol{
+    .footer-col{
         width: 23%;
         padding: 0;
     }
 
-    #queraFooterLogo{
+    #quera-footer-logo{
         width: 100%;
         margin-bottom: 1rem;
     }
 
-    #footerColProduct{
+    #footer-col-product{
         margin-right: 1rem;
     }
 
-    #footerLastSec{
+    #footer-last-sec{
         width: 35%;
         margin: auto;
     }
@@ -633,15 +633,15 @@ footer{
             "footer footer footer";
     }
 
-    #hamburgerSec{
+    #hamburger-sec{
         display: none;
     }
 
-    .leftSide{
+    .left-side{
         margin-left: 2rem;
     }
 
-    #phoneBanner{
+    #phone-banner{
         display: none;
     }
 
@@ -650,16 +650,16 @@ footer{
         margin-right: 2rem;
     }
 
-    #resumeTopic{
+    #resume-topic{
         display: none;
     }
 
-    .footerCol{
+    .footer-col{
         width: 20%;
         padding: 0;
     }
 
-    #footerLastSec{
+    #footer-last-sec{
         width: 30%;
         margin: auto;
     }
@@ -667,20 +667,20 @@ footer{
 
 @media only screen and (min-width: 1200px){
 
-    #phoneBanner{
+    #phone-banner{
         display: none;
     }
 
-    .cardContainer{
+    .card-container{
         width: 410px;
         height: 270px;
     }
 
-    #hamburgerSec{
+    #hamburger-sec{
         display: none;
     }
 
-    #resumeTopic{
+    #resume-topic{
         display: none;
     }
 }
